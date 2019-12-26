@@ -1,0 +1,77 @@
+1、
+import java.util.Scanner;
+public class Test{
+  public static void main(String[] args){
+
+     Scanner scanner =  new Scanner(System.in);
+     System.out.println("请输入年龄 :");
+     int age = scanner.nextInt();
+     if(age<18){
+       System.out.println("少年");
+    }else if( age < 28){
+       System.out.println("青年");
+    }else if(age <55){
+       System.out.println("中年");
+    }
+    else{
+       System.out.println("老年");
+    }
+ }
+}
+2、
+   public class Test{
+     public static void main(String[] args){
+  System.out.println("请输入一个整数 :");
+   Scanner scanner =  new Scanner(System.in);
+  int num = scanner.nextInt();
+  for(int i =2;i<Math.sqrt(num);i+=2){
+            if(num % i ==0){
+            System.out.println("该数不是素数！");
+             }
+             else{
+             System.out.println("该数为素数！");
+             }
+            }
+            if(num <=3){
+              System.out.println("该数为素数！");
+            }
+          }
+        }
+3、
+     public class Test{
+       public static void main(String[] args){
+     int num = scanner.nextInt();
+     Scanner scanner =  new Scanner(System.in);
+     for(int num= 1;num<101;num++){
+        for(int i =2;i<Math.sqrt(num);i+=2){
+        if(num % i ==0){
+         break;
+         }else{
+        System.out.println(num);
+       }
+     }
+4、
+    public class Test{
+      public static void main(String[] args){
+      for(int year =1000;year<=2000;year++){
+      if( (year % 400 ==0) ||((year % 4 ==0 ) && (year % 100 !=0))){
+           System.out.println("year =" + year);
+    }
+   }
+5、
+   public class Test{
+      public static void main(String[] args){
+      int count = 0; 
+      for(int i =1;i<100;i++){
+        if(i%10 ==0){
+               count++;
+        }
+        if ( i / 10 ==9){
+          count++;
+        }
+      } 
+      System.out.println("count =" +count);  
+}
+}                                    
+      
+    
